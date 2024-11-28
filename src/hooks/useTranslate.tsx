@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_OPENAI_API_KEY || '');
+const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GOOGLE_API_KEY || '');
 
 const useTranslate = (sourceText: string, selectedLanguage: string): string => {
   const [targetText, setTargetText] = useState<string>("");
