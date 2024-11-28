@@ -1,6 +1,13 @@
 import React from "react";
 
-const TextArea = ({ id, value, onChange, placeholder }) => (
+interface TextAreaProps {
+  id: string;
+  value: string;
+  onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  placeholder?: string;
+}
+
+const TextArea: React.FC<TextAreaProps> = ({ id, value, onChange, placeholder }) => (
   <textarea
     rows={5}
     id={id}

@@ -26,7 +26,13 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/SpeechRecognition/SpeechRecognition.tsx"
-, "src/utils/rftToText.ts"  ],
-  "exclude": ["node_modules"]
+    "src/components/SpeechRecognition/SpeechRecognition.tsx",
+    "src/utils/rftToText.ts",
+    "src/types/*.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": true
+  }
 }

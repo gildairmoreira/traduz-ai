@@ -1,7 +1,13 @@
 import React from "react";
 import { IconLanguage } from "@tabler/icons-react";
 
-const LanguageSelector = ({
+interface LanguageSelectorProps {
+  selectedLanguage: string;
+  setSelectedLanguage: (language: string) => void;
+  languages: string[];
+}
+
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   selectedLanguage,
   setSelectedLanguage,
   languages,
