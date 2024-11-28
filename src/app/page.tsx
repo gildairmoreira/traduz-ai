@@ -109,7 +109,7 @@ const Home: React.FC = () => {
             </h1>
 
             <p className="mt-3 text-neutral-400">
-            TraduzAI: Conectando Você ao Mundo.
+            TraduzAI: Use inteligencia artificial para traduzir textos com contexto real de uma Conversa.
             </p>
 
             <div className="mt-7 sm:mt-12 mx-auto max-w-3xl relative">
