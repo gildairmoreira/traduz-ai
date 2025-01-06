@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <br />
+      <img src="./readmefoto.png" alt="Project Banner">
+  
+  <br />
 
-## Getting Started
+  <div>
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff" alt="typescript" />
+    <img src="https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white" alt="nextdotjs" />
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff" alt="gemini" />
+  </div>
 
-First, run the development server:
+  <h3 align="center">Traduz AI</h3>
+
+</div>
+
+## <a name="introduction">🤖 Introducão</a>
+Desenvolvido com as mais recentes tecnologias Next.js e TypeScript, o LinguaSpeak é uma ferramenta avançada de tradução por voz. Ele permite que os usuários falem no microfone, traduzam o texto falado para outro idioma e reproduzam a tradução. Este projeto é perfeito para quem usa AI para traduzir textos com contexto real de uma conversa.
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Next.js
+- TypeScript
+- Gemini API
+- React Speech Recognition
+- Tailwind CSS
+
+## <a name="features">🔋 Funcionalidades</a>
+
+👉 **Reconhecimento de Voz:** Converte palavras faladas em texto usando a API Web Speech.
+
+👉 **Tradução de Texto:** Traduz o texto reconhecido para um idioma de destino selecionado usando o modelo Gemini 1.5 da Google.
+
+👉 **Reproduzir Áudio:** Converte o texto traduzido de volta para fala usando a síntese de voz da API Web Speech.
+
+👉 **Busca de Conteúdo em Links:** Busca e traduz o conteúdo de texto de URLs fornecidas.
+
+👉 **Seleção de Idioma:** Permite que os usuários selecionem os idiomas de destino para tradução.
+
+👉 **Copiar para Área de Transferência:** Copia o texto traduzido para a área de transferência.
+
+👉 **Curtir, Descurtir e Favoritar:** Oferece recursos de interação do usuário para traduções.
+
+👉 **Design Responsivo**: Garante uma experiência perfeita em diferentes dispositivos.
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/gildairmoreira/traduz-ai.git
+cd traduz-ai
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content:
+
+```env
+NEXT_PUBLIC_API_KEY=your-api-key
+```
+
+**Running the Project**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
