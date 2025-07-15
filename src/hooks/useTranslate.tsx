@@ -9,7 +9,7 @@ const useTranslate = (sourceText: string, selectedLanguage: string): string => {
   useEffect(() => {
     const handleTranslate = async (text: string): Promise<void> => {
       try {
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
         const prompt = `Você receberá um texto para traduzir. Este texto é: "${text}". 
         Suas tarefas são:
