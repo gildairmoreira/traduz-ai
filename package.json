@@ -17,7 +17,7 @@
     "dotenv": "^16.4.5",
     "framer-motion": "^11.2.12",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.21",
+    "next": "14.2.35",
     "openai": "^4.73.1",
     "preline": "^2.5.1",
     "react": "^18",
