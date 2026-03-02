@@ -17,6 +17,7 @@ import SvgDecorations from "@/components/SvgDecorations";
 import CategoryLinks from "@/components/categoryLinks";
 import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRecognition";
 import LanguageSelector from "@/components/Inputs/LanguageSelector";
+import WarningModal from "@/components/WarningModal";
 
 const Home: React.FC = () => {
   const [sourceText, setSourceText] = useState<string>("");
@@ -99,6 +100,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="w-full bg-black bg-dot-white/[0.2] relative flex items-center justify-center">
+      <WarningModal />
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className="relative overflow-hidden h-fit">
@@ -109,7 +111,7 @@ const Home: React.FC = () => {
             </h1>
 
             <p className="mt-3 text-neutral-400">
-            TraduzAI: Use inteligencia artificial para traduzir textos com contexto real de uma Conversa.
+              TraduzAI: Use inteligencia artificial para traduzir textos com contexto real de uma Conversa.
             </p>
 
             <div className="mt-7 sm:mt-12 mx-auto max-w-3xl relative">
@@ -143,7 +145,7 @@ const Home: React.FC = () => {
                   <TextArea
                     id="target-language"
                     value={targetText}
-                    onChange={() => {}}
+                    onChange={() => { }}
                     placeholder="Traduzido Aqui"
                   />
                   <div className="flex flex-row justify-between w-full">
@@ -164,13 +166,13 @@ const Home: React.FC = () => {
                       {copied && (
                         <span className="text-xs text-green-500">Copiado!</span>
                       )}
-                      <IconThumbUp 
-                        size={22} 
+                      <IconThumbUp
+                        size={22}
                         onClick={handleLike}
                         className={isLiked ? "text-green-500" : ""}
                       />
-                      <IconThumbDown 
-                        size={22} 
+                      <IconThumbDown
+                        size={22}
                         onClick={handleDislike}
                         className={isDisliked ? "text-red-500" : ""}
                       />

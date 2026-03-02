@@ -28,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <script src="./node_modules/preline/dist/preline.js"></script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
         {children}
+        <script src="./node_modules/preline/dist/preline.js"></script>
       </body>
     </html>
   );
